@@ -145,3 +145,22 @@ function MinMax(num){
    return result;
 }
 console.log(MinMax([8,0,5]));
+
+
+
+
+function countWord(word){
+   const couResult ={};
+   for(let c=0;c<word.length;c++){
+      const compWord =word[c];
+
+      if (!couResult[word]) {
+         couResult[word] = 1;
+       } else {
+         couResult[word]++;
+       }
+     }
+
+     return couResult;
+   }
+console.log(countWord(['orange','banana','banana','apple','orange']));
